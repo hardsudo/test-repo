@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML Tag Showcase">
+    <meta name="keywords" content="HTML, tags, W3C, example">
+    <meta name="author" content="Gemini">
+    <title>HTML Tag Showcase</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Internal CSS for demonstration */
+        body {
+            font-family: sans-serif;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+    <base href="/">
+    <script>
+        // JavaScript for demonstration
+        function showAlert() {
+            alert('Button Clicked!');
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>HTML Tag Showcase</h1>
+        <nav>
+            <ul>
+                <li><a href="#text-elements">Text Elements</a></li>
+                <li><a href="#structural-elements">Structural Elements</a></li>
+                <li><a href="#multimedia-elements">Multimedia Elements</a></li>
+                <li><a href="#form-elements">Form Elements</a></li>
+                <li><a href="#table-elements">Table Elements</a></li>
+                <li><a href="#semantic-elements">Semantic Elements</a></li>
+                <li><a href="#interactive-elements">Interactive Elements</a></li>
+                <li><a href="#other-elements">Other Elements</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="text-elements">
+            <h2>Text Elements</h2>
+            <p>This is a <b>paragraph</b> with some <strong>strong</strong> text and <em>emphasized</em> text.
+                It also contains <mark>marked</mark> text, <sup>superscript</sup>, <sub>subscript</sub>, and
+                <del>deleted</del> text. Here's a <ins>inserted</ins> word.
+                This is <small>small</small> text. This is a <q>quote</q>. This is <abbr title="Abbreviation">abbr</abbr>.
+                This is <code>computer code</code>. This is <samp>sample output</samp>. This is <kbd>keyboard input</kbd>.
+                This is <var>variable</var>. This is <pre>preformatted text</pre>.
+            </p>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+            <hr>
+            <address>
+                Written by <a href="mailto:gemini@example.com">Gemini</a>.<br>
+                Visit us at:<br>
+                Example.com<br>
+                Box 564, Disneyland<br>
+                USA
+            </address>
+            <blockquote>This is a block quote.</blockquote>
+            <cite>The title of a work</cite>
+            <dfn>Definition Term</dfn>
+
+        </section>
+
+        <section id="structural-elements">
+            <h2>Structural Elements</h2>
+            <div>This is a generic division (div).</div>
+            <p>This is another paragraph.</p>
+            <span>This is an inline span.</span>
+            <br>
+            <section>
+                <h3>Section Heading</h3>
+                <p>This is content within a section.</p>
+                <article>
+                    <h4>Article Title</h4>
+                    <p>This is the content of an article.</p>
+                    <aside>
+                        <p>This is an aside.</p>
+                    </aside>
+                </article>
+            </section>
+            <nav>
+                <ul>
+                    <li><a href="#">Nav item 1</a></li>
+                    <li><a href="#">Nav item 2</a></li>
+                </ul>
+            </nav>
+            <header>
+                <h3>Page Header</h3>
+            </header>
+            <footer>
+                <p>© 2024 Example.com</p>
+            </footer>
+            <main>
+                <p>Main content of the page goes here</p>
+            </main>
+        </section>
+
+        <section id="multimedia-elements">
+            <h2>Multimedia Elements</h2>
+            <img src="https://placehold.co/600x400/EEE/red" alt="Example Image" width="200" height="150">
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <video width="320" height="240" controls>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <figure>
+                <img src="https://placehold.co/600x400/EEE/green" alt="Another Image" width="200" height="150">
+                <figcaption>A caption for the image.</figcaption>
+            </figure>
+            <picture>
+                <source media="(min-width:650px)" srcset="https://placehold.co/600x400/EEE/31343C">
+                <source media="(min-width:465px)" srcset="https://placehold.co/600x400/EEE/31343C">
+                <img src="https://placehold.co/600x400/EEE/31343C" alt="Flowers" style="width:auto;">
+              </picture>
+              <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+              </svg>
+            <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+            </canvas>
+            <script>
+                var c = document.getElementById("myCanvas");
+                var ctx = c.getContext("2d");
+                ctx.beginPath();
+                ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+                ctx.stroke();
+            </script>
+        </section>
+
+        <section id="form-elements">
+            <h2>Form Elements</h2>
+            <form action="/submit" method="post">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="John"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="Doe"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br><br>
+
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday"><br><br>
+
+                <label for="quantity">Quantity (between 1 and 5):</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="5"><br><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+
+                 <label for="homepage">Add your homepage:</label>
+                 <input type="url" id="homepage" name="homepage"><br><br>
+
+                 <label for="myfile">Select a file:</label>
+                 <input type="file" id="myfile" name="myfile"><br><br>
+
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">HTML</label><br>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">CSS</label><br>
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">JavaScript</label><br><br>
+
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> I have a bike</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                               <label for="vehicle2"> I have a car</label><br><br>
+
+                <label for="cars">Choose a car:</label>
+                <select id="cars" name="cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select><br><br>
+
+                <label for="pet-select">Choose a pet:</label>
+
+                <select name="pets" id="pet-select" multiple>
+                    <optgroup label="Four-legged animals">
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="hamster">Hamster</option>
+                    </optgroup>
+                    <optgroup label="Birds">
+                        <option value="parrot">Parrot</option>
+                        <option value="crow">Crow</option>
+                        <option value="magpie">Magpie</option>
+                    </optgroup>
+                </select><br><br>
+
+                <label for="story">Tell us your story:</label><br><br>
+                <textarea id="story" name="story" rows="5" cols="33">
+                    It was a dark and stormy night...
+                </textarea><br><br>
+
+                <button type="button" onclick="showAlert()">Click Me</button>
+                <input type="submit" value="Submit">
+                <input type="reset">
+
+                <fieldset>
+                    <legend>Personalia:</legend>
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" value="John"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                    <input type="submit" value="Submit">
+                  </fieldset>
+
+                <label for="favcolor">Select your favorite color:</label>
+                <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+
+                <label for="points">Points (between 0 and 10):</label>
+                <input type="range" id="points" name="points" min="0" max="10"><br><br>
+
+                <label for="bdaymonth">Birthday (month and year):</label>
+                <input type="month" id="bdaymonth" name="bdaymonth"><br><br>
+
+                <label for="appt">Select a time:</label>
+                <input type="time" id="appt" name="appt"><br><br>
+
+                <label for="week">Select a week:</label>
+                <input type="week" id="week" name="week"><br><br>
+
+                <input type="hidden" id="custId" name="custId" value="3487">
+
+                <label for="gsearch">Search Google:</label>
+                <input type="search" id="gsearch" name="gsearch"><br><br>
+
+                  <input type="image" src="https://placehold.co/48x48/EEE/31343C" alt="Submit" width="48" height="48">
+            </form>
+            <output name="result">60</output>
+            <progress id="file" value="32" max="100"> 32% </progress>
+            <meter value="2" min="0" max="10">2 out of 10</meter>
+        </section>
+
+        <section id="table-elements">
+            <h2>Table Elements</h2>
+            <table>
+                <caption>Table Example</caption>
+                <thead>
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Row 1, Data 1</td>
+                        <td>Row 1, Data 2</td>
+                    </tr>
+                    <tr>
+                        <td>Row 2, Data 1</td>
+                        <td>Row 2, Data 2</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Table Footer</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <colgroup>
+                <col span="2" style="background-color:lightgray">
+                <col style="background-color:lightblue">
+             </colgroup>
+        </section>
+
+        <section id="semantic-elements">
+          <h2>Semantic Elements</h2>
+          <details>
+            <summary>Copyright 2023.</summary>
+            <p> - by Example.com.</p>
+          </details>
+          <dialog open>This is an open dialog window</dialog>
+          <summary>This is a summary</summary>
+          <time datetime="2020-02-14 20:00">February 14, 8 pm</time>
+        </section>
+
+        <section id="interactive-elements">
+            <h2>Interactive Elements</h2>
+            <details>
+                <summary>Details/Summary Example</summary>
+                <p>This is hidden content revealed when the summary is clicked.</p>
+            </details>
+            <menu>
+                <li><button type="button">Menu Item 1</button></li>
+                <li><button type="button">Menu Item 2</button></li>
+                <li><button type="button">Menu Item 3</button></li>
+            </menu>
+        </section>
+
+        <section id="other-elements">
+            <h2>Other Elements</h2>
+            <p>
+                <a href="https://www.example.com" target="_blank" rel="noopener noreferrer">Link to Example</a>
+            </p>
+            <ul>
+                <li>List item 1</li>
+                <li>List item 2</li>
+                <li>List item 3</li>
+            </ul>
+            <ol>
+                <li>Ordered item 1</li>
+                <li>Ordered item 2</li>
+                <li>Ordered item 3</li>
+            </ol>
+            <dl>
+                <dt>Term 1</dt>
+                <dd>Definition 1</dd>
+                <dt>Term 2</dt>
+                <dd>Definition 2</dd>
+            </dl>
+            <pre>
+                This is
+                preformatted
+                   text.
+            </pre>
+            <code>
+                let message = "Hello, world!";
+                console.log(message);
+            </code>
+            <noscript>Your browser does not support JavaScript.</noscript>
+            <script>
+                // This is a script tag (already used above as well)
+                console.log("JavaScript is enabled!");
+            </script>
+            <style>
+                /* This is a style tag (already used above) */
+                p {
+                    color: blue;
+                }
+            </style>
+            <link rel="stylesheet" href="styles.css">
+
+            <p>This text includes a <bdi>right-to-left</bdi> text example.</p>
+
+            <p title="I'm a tooltip">This is a paragraph.</p>
+
+            <ruby>
+                漢 <rt> kan </rt>
+                字 <rt> ji </rt>
+              </ruby>
+              <data value="20160525">25 May 2016</data>
+              <p>User: <bdo dir="rtl">This text will be written from right to left</bdo></p>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 My HTML Showcase</p>
+    </footer>
+</body>
+
+</html>
